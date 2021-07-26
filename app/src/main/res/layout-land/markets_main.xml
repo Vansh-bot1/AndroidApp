@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#221F1F">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/appCompatImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/mkts"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnStocks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:background="@drawable/insiderect"
+        android:minWidth="100dip"
+        android:minHeight="60dip"
+        android:text="Buzzing Stocks"
+        app:layout_constraintStart_toEndOf="@+id/btnBussNews"
+        app:layout_constraintTop_toTopOf="@+id/btnBussNews" />
+
+    <Button
+        android:id="@+id/btnBussNews"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:background="@drawable/insiderect"
+        android:minWidth="100dip"
+        android:minHeight="150dip"
+        android:text="Business"
+        android:textAllCaps="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appCompatImageView" />
+
+    <Button
+        android:id="@+id/btnGblmkts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/insiderect"
+        android:minWidth="150dip"
+        android:minHeight="150dip"
+        android:text="Global Markets"
+        app:layout_constraintEnd_toStartOf="@+id/btnCommodity"
+        app:layout_constraintStart_toEndOf="@+id/btnStocks"
+        app:layout_constraintTop_toTopOf="@+id/btnStocks" />
+
+    <Button
+        android:id="@+id/btnTech"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/insiderect"
+        android:minWidth="100dip"
+        android:minHeight="60dip"
+        android:text="  Technicals  "
+        app:layout_constraintBottom_toBottomOf="@+id/btnBussNews"
+        app:layout_constraintStart_toStartOf="@+id/btnStocks" />
+
+    <Button
+        android:id="@+id/btnEconomy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/insiderect"
+        android:minWidth="100dip"
+        android:minHeight="60dip"
+        android:text="Economy"
+        app:layout_constraintBottom_toBottomOf="@+id/btnCurrency"
+        app:layout_constraintEnd_toEndOf="@+id/btnCommodity" />
+
+    <Button
+        android:id="@+id/btnCommodity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/insiderect"
+        android:minWidth="100dip"
+        android:minHeight="60dip"
+        android:text="Commodity"
+        app:layout_constraintEnd_toStartOf="@+id/btnCurrency"
+        app:layout_constraintTop_toTopOf="@+id/btnCurrency" />
+
+    <Button
+        android:id="@+id/btnCurrency"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/insiderect"
+        android:minWidth="100dip"
+        android:minHeight="150dip"
+        android:text="Currency"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appCompatImageView" />
+</androidx.constraintlayout.widget.ConstraintLayout>

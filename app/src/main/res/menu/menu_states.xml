@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/mnuDelhi"
+        android:title="Delhi" />
+    <item
+        android:id="@+id/mnuMumbai"
+        android:title="Mumbai" />
+    <item
+        android:id="@+id/mnuChennai"
+        android:title="Chennai" />
+    <item
+        android:id="@+id/mnuBangalore"
+        android:title="Bangalore" />
+    <item
+        android:id="@+id/mnuHyd"
+        android:title="Hyderabad" />
+</menu>

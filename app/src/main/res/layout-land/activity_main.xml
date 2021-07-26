@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#221F1F">
+
+    <Button
+        android:id="@+id/btnNews"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/myrect"
+        android:elevation="20dp"
+        android:minWidth="132dip"
+        android:minHeight="192dip"
+        android:text="News"
+        android:textSize="25sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnMarkets"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:background="@drawable/myrect"
+        android:elevation="20dp"
+        android:minWidth="132dip"
+        android:minHeight="192dip"
+        android:text="Markets"
+        android:textAllCaps="true"
+        android:textSize="25sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btnNews"
+        app:layout_constraintStart_toEndOf="@+id/btnNews" />
+
+    <Button
+        android:id="@+id/btnOthers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="100dp"
+        android:background="@drawable/myrect"
+        android:minWidth="132dip"
+        android:minHeight="192dip"
+        android:text="Others"
+        android:textAllCaps="true"
+        android:textSize="25sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btnMarkets"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnMarkets" />
+
+    <TextView
+        android:id="@+id/Date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="TextView"
+        android:textAlignment="textStart"
+        android:textColor="#A39B9B"
+        android:textSize="30sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/Time"
+        app:layout_constraintStart_toEndOf="@+id/Time" />
+
+    <TextView
+        android:id="@+id/Year"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:text="TextView"
+        android:textColor="#A39B9B"
+        app:layout_constraintStart_toEndOf="@+id/Date"
+        app:layout_constraintTop_toTopOf="@+id/Date" />
+
+    <TextView
+        android:id="@+id/Time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="TextView"
+        android:textColor="#A39B9B"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.35"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
